@@ -14,8 +14,15 @@ Game.new do
 
   scene :cave do
     question "Do you enter the cave?" do
-      answer "Yes, I enter the cave", :treasure
+      answer "Yes, I enter the cave", :tunnel
       answer "No I go past the cave", :cliff
+    end
+  end
+
+  scene :tunnel do
+    question "What do you do?" do
+      answer "I go into the tunnel", :treasure
+      answer "I keep going past the tunnel", :bear
     end
   end
 
